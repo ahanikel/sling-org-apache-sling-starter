@@ -1,1 +1,1 @@
-(cd $(dirname $0)/target && exec dependency/org.apache.sling.feature.launcher/bin/launcher -f slingfeature-tmp/feature-oak_zeromq.json)
+(cd $(dirname $0)/target && rm -rf launcher && exec dependency/org.apache.sling.feature.launcher/bin/launcher -f slingfeature-tmp/feature-oak_zeromq.json)

@@ -1,0 +1,1 @@
+ps auxww|awk '/feature\.launcher/ { system("kill -9 " $2) }'
