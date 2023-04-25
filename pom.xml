@@ -114,6 +114,23 @@
                             <filesInclude>test/*.json</filesInclude>
                             <title>Sling with Oak Segment NS persistence and test content</title>
                         </aggregate>
+                        <aggregate>
+                            <classifier>oak_zeromq</classifier>
+                            <filesInclude>*.json</filesInclude>
+                            <filesInclude>oak/*.json</filesInclude>
+                            <filesInclude>oak/persistence/oak_persistence_zeromq.json</filesInclude>
+                            <filesInclude>app/*.json</filesInclude>
+                            <filesInclude>test/*.json</filesInclude>
+                            <title>Sling With Oak ZeroMQ NS Persistence and test content</title>
+                        </aggregate>
+                        <aggregate>
+                            <classifier>oak_zeromq_test</classifier>
+                            <filesInclude>*.json</filesInclude>
+                            <filesInclude>oak/*.json</filesInclude>
+                            <filesInclude>oak/persistence/oak_persistence_zeromq.json</filesInclude>
+                            <filesInclude>app/*.json</filesInclude>
+                            <title>Sling With Oak ZeroMQ NS Persistence</title>
+                        </aggregate>
                     </aggregates>
                     <scans>
                         <scan>
@@ -121,6 +138,8 @@
                             <includeClassifier>oak_tar_test</includeClassifier>
                             <includeClassifier>oak_mongo</includeClassifier>
                             <includeClassifier>nosample_base</includeClassifier>
+                            <includeClassifier>oak_zeromq</includeClassifier>
+                            <includeClassifier>oak_zeromq_test</includeClassifier>
                         </scan>
                     </scans>
                     <archives>
@@ -132,11 +151,16 @@
                             <classifier>oak_mongo_far</classifier>
                             <includeClassifier>oak_mongo</includeClassifier>
                         </archive>
+                        <archive>
+                            <classifier>oak_zeromq_far</classifier>
+                            <includeClassifier>oak_zeromq</includeClassifier>
+                        </archive>
                     </archives>
                     <repositories>
                         <repository>
                             <includeClassifier>oak_tar</includeClassifier>
                             <includeClassifier>oak_mongo</includeClassifier>
+                            <includeClassifier>oak_zeromq</includeClassifier>
                             <includeClassifier>docker</includeClassifier>
                         </repository>
                     </repositories>

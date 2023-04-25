@@ -1,0 +1,13 @@
+{
+    "bundles":[
+        {
+            "id":"org.apache.jackrabbit:oak-store-zeromq:1.42.0-zeromq",
+            "start-order":"15"
+        }
+    ],
+    "configurations":{
+        "org.apache.jackrabbit.oak.store.zeromq.SimpleNodeStore":{
+            "name":"Default NodeStore"
+        }
+    }
+}
