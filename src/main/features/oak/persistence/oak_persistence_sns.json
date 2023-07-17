@@ -1,12 +1,12 @@
 {
     "bundles":[
         {
-            "id":"org.apache.jackrabbit:oak-segment-tar:${oak.version}",
+            "id":"org.apache.jackrabbit:oak-store-zeromq:${oak.version}",
             "start-order":"15"
         }
     ],
     "configurations":{
-        "org.apache.jackrabbit.oak.segment.SegmentNodeStoreService":{
+        "org.apache.jackrabbit.oak.store.zeromq.SimpleNodeStore":{
             "name":"Default NodeStore"
         }
     }
